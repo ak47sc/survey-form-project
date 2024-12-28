@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <section class="form-section container">
+      <h1>Programmers Assemble!</h1>
+      <h4>Tell us your favorites!</h4>
+      <form action="index.html" class="container">
+        <label for="fname">First Name:</label>
+        <input type="text" name="first-name" id="fname" required />
+        <label for="lname">Last Name:</label>
+        <input type="text" name="last-name" id="lname" required />
+        <label for="email">Email:</label>
+        <input type="email" required />
+        <label for="age">Age:</label>
+        <input type="number" min="10" max="99" id="age" name="age" required />
+        <label for="program">Favorite programming language</label>
+        <select name="program" id="program">
+          <option selected disabled>Select a programming language</option>
+          <option value="1">C++</option>
+          <option value="2">java</option>
+          <option value="3">python</option>
+          <option value="4">javaScript</option>
+          <option value="5">GO</option>
+          <option value="6">Rust</option>
+        </select>
+        <div class="form-choose">
+          <label for="check">Operating Systems you have worked with</label>
+          <p>(Choose all that appy)</p>
+          <div>
+            <input type="checkbox" id="check" name="osknown" value="1" />
+            <label for="check">Windows</label>
+          </div>
+          <div>
+            <input type="checkbox" id="check2" name="osknown" value="2" />
+            <label for="check2">Mac OS</label>
+          </div>
+          <div>
+            <input type="checkbox" id="check3" name="osknown" value="3" />
+            <label for="check3">linux</label>
+          </div>
+        </div>
+        <div class="form-choose">
+          <label for="radio">Occupation Status</label>
+          <p>(Choose only one)</p>
+          <div>
+            <input type="radio" id="radio" name="occupation" value="1" />
+            <label for="radio">Student</label>
+          </div>
+          <div>
+            <input type="radio" id="radio2" name="occupation" value="2" />
+            <label for="radio2">Working</label>
+          </div>
+          <div>
+            <input type="radio" id="radio3" name="occupation" value="3" />
+            <label for="radio3">Freelancer</label>
+          </div>
+          <div>
+            <input type="radio" id="radio2" name="occupation" value="4" />
+            <label for="radio2">Unemployed</label>
+          </div>
+        </div>
+        <label for="">Tell us about this survey</label>
+        <textarea
+          name="opinion"
+          id="opinion"
+          placeholder="Please feel free to write a review"
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 255, 255, 1) 51%,
+    rgba(0, 211, 254, 1) 100%
+  );
+}
+.form-section {
+  background-color: rgb(241, 163, 252);
+  padding: 1em;
+  border-radius: 10px;
+  max-width: 50%;
+  margin: 0 auto;
+}
+.form-section h1,
+.form-section h4 {
+  text-align: center;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1em;
+}
+form.container input,
+form.container select {
+  border-radius: 10px;
+  height: 3em;
+  border: 0;
+  outline: 0;
+  padding-left: 1em;
+}
+form.container {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.form-choose {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.form-choose p {
+  font-size: 0.5em;
+}
+.form-choose div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  background-color: rgb(211, 164, 255);
+  padding-left: 1em;
+}
+form.container button {
+  height: 3em;
+  border: 0;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+form.container textarea {
+  resize: none;
+  height: 6em;
+}
